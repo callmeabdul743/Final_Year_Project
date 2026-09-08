@@ -1,0 +1,175 @@
+/* General page design */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #172554;
+    color: white;
+}
+
+header h2 {
+    margin: 0;
+    color: white;
+}
+
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main content */
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Main headings */
+
+h1 {
+    font-size: 36px;
+    color: #172554;
+}
+
+h2 {
+    color: #172554;
+}
+
+
+/* Paragraphs */
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Feature cards */
+
+.feature-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #eff6ff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Login form */
+
+.login-container {
+    max-width: 450px;
+    margin: 60px auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #172554;
+    color: white;
+    margin-top: 50px;
+}
+
+
+/* Mobile design */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    .feature-card {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+}
